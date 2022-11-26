@@ -27,7 +27,7 @@ namespace QuanLySuKien.Daos
 
         public List<Event> getByCategory(int id)
         {
-            return myDb.events.Where(x => x.idCategory == id && x.status == 1).ToList();
+            return myDb.events.Where(x => x.idCategory == id && x.status == 1).OrderByDescending(x => x.date).ToList();
         }
 
         public List<Event> getByUser(int id)

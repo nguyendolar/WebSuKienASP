@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "StatisHome";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h4 class="mt-1">Statistical</h4>
+
+        <div class="card mb-4">
+            <div class="card-header">
+            </div>
+
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead style="color: whitesmoke ">
+                        <tr style="background-color: #4CACBC">
+                            <th>#</th>
+                            <th>Category Name</th>
+                            <th>Total Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ var stt = 1;}
+                        @foreach (var item in ViewBag.List)
+                        {
+                        <tr>
+                            <td style="width:150px">@stt</td>
+                            <td>
+                                @item.categoryName
+                            </td>
+                            <td>
+                                @item.totalEvent
+                            </td>
+                        </tr>
+                            stt++;
+                        }
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+

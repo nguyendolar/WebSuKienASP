@@ -64,6 +64,12 @@ namespace QuanLySuKien.Controllers.Admin
             
         }
 
+        public ActionResult Delete(Event evt)
+        {
+            eventDao.Delete(evt.idEvent);
+            return RedirectToAction("Index", new { msg = "1" });
+        }
+
         [HttpPost]
         public ActionResult Approvel(FormCollection form)
         {

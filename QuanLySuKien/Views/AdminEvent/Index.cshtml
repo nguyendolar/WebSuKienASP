@@ -105,79 +105,108 @@
                                         data-bs-target="#@idAppro">
                                     Approve
                                 </button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#@idModelDel" style="width:100px" class="btn btn-danger"> Delete</button>
                             }
-                                <button style="width:95px" type="button" class="btn btn-danger"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#@idFeed">
-                                    Feedback
-                                </button>
-                                <div class="modal fade" id="@idAppro" tabindex="-1"
-                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Are you sure approve ?</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                            </div>
+                            <button style="width:95px" type="button" class="btn btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#@idFeed">
+                                Feedback
+                            </button>
+                            <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Are you sure delete ?</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
 
-                                            <div class="modal-body">
-                                                Event : @item.name
-                                                <form action="/AdminEvent/Approvel" method="post">
-                                                    <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
-                                                    <input type="hidden" class="form-control" id="id" name="idEvent" value="@item.idEvent">
-                                                    <div class="modal-footer" style="margin-top: 20px">
-                                                        <button style="width:100px" type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">
-                                                            Close
-                                                        </button>
-                                                        <button style="width:100px" type="submit" class="btn btn-danger"> Approve</button>
-                                                    </div>
-                                                </form>
-
-                                            </div>
+                                        <div class="modal-body">
+                                            Event : @item.name
+                                            <form action="/AdminEvent/Delete" method="post">
+                                                <input type="hidden" class="form-control" id="id" name="idEvent" value="@item.idEvent">
+                                                <div class="modal-footer" style="margin-top: 20px">
+                                                    <button style="width:100px" type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                        Close
+                                                    </button>
+                                                    <button style="width:100px" type="submit" class="btn btn-danger"> Delete</button>
+                                                </div>
+                                            </form>
 
                                         </div>
+
                                     </div>
                                 </div>
-                                <!-- Modal Update-->
-                                <div class="modal fade" id="@idFeed" tabindex="-1"
-                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form method="POST" action="/AdminEvent/Feedback" class="register-form" id="register-form" enctype="multipart/form-data">
-                                                    <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
-                                                    <div class="mb-3">
-                                                        <label for="category-film"
-                                                               class="col-form-label">Event:</label>
-                                                        <input type="text" class="form-control" id="category-film" readonly value="@item.name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="category-film"
-                                                               class="col-form-label">Content Feedback:</label>
-                                                        <textarea name="content" class="form-control" cols="30"
-                                                                  rows="5"></textarea>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">
-                                                            Close
-                                                        </button>
-                                                        <button type="submit" class="btn btn-primary">Send</button>
-                                                    </div>
-                                                </form>
-                                            </div>
+                            </div>
+                            <div class="modal fade" id="@idAppro" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Are you sure approve ?</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            Event : @item.name
+                                            <form action="/AdminEvent/Approvel" method="post">
+                                                <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
+                                                <input type="hidden" class="form-control" id="id" name="idEvent" value="@item.idEvent">
+                                                <div class="modal-footer" style="margin-top: 20px">
+                                                    <button style="width:100px" type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                        Close
+                                                    </button>
+                                                    <button style="width:100px" type="submit" class="btn btn-danger"> Approve</button>
+                                                </div>
+                                            </form>
 
                                         </div>
+
                                     </div>
                                 </div>
-                            </td>
+                            </div>
+                            <!-- Modal Update-->
+                            <div class="modal fade" id="@idFeed" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST" action="/AdminEvent/Feedback" class="register-form" id="register-form" enctype="multipart/form-data">
+                                                <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
+                                                <div class="mb-3">
+                                                    <label for="category-film"
+                                                           class="col-form-label">Event:</label>
+                                                    <input type="text" class="form-control" id="category-film" readonly value="@item.name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="category-film"
+                                                           class="col-form-label">Content Feedback:</label>
+                                                    <textarea name="content" class="form-control" cols="30"
+                                                              rows="5"></textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                        Close
+                                                    </button>
+                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <!-- Modal Des-->
                         <div class="modal fade" id="@idEx1" tabindex="-1"
                              aria-labelledby="exampleModalLabel" aria-hidden="true">

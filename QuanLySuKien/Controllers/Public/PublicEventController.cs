@@ -186,5 +186,11 @@ namespace QuanLySuKien.Controllers.Public
             ViewBag.name = name;
             return View();
         }
+
+        public ActionResult Delete(Event evt)
+        {
+            eventDao.Delete(evt.idEvent);
+            return RedirectToAction("Index", new { msg = "1" });
+        }
     }
 }

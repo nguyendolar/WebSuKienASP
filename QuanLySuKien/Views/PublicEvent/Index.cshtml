@@ -120,7 +120,7 @@
                                     <span>Approved</span>
                                 }
                             </td>
-                            <td style="width:300px">
+                            <td style="width:330px">
                                 @{
                                     var idEx1 = "exampleModalLabel" + item.idEvent;
                                     var idAppro = "exampleModalLabelAppro" + item.idEvent;
@@ -136,149 +136,17 @@
                                     <a style="width:95px" type="button" class="btn btn-info" href="/PublicEvent/Update/@item.idEvent">
                                         Edit
                                     </a>
+                                    <form action="/PublicEvent/Delete" method="post">
+                                        <input type="hidden" class="form-control" id="id" name="idEvent" value="@item.idEvent">
+                                        <button type="submit" style="width:100px;margin-left : 190px;margin-top : -65px" class="btn btn-danger"> Delete</button>
+                                    </form>
+                                   
                                 }
-                                    <div class="modal fade" id="@idAppro" tabindex="-1"
-                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Are you sure approve ?</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                </div>
 
-                                                <div class="modal-body">
-                                                    Event : @item.name
-                                                    <form action="/AdminEvent/Approvel" method="post">
-                                                        <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
-                                                        <input type="hidden" class="form-control" id="id" name="idEvent" value="@item.idEvent">
-                                                        <div class="modal-footer" style="margin-top: 20px">
-                                                            <button style="width:100px" type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">
-                                                                Close
-                                                            </button>
-                                                            <button style="width:100px" type="submit" class="btn btn-danger"> Approve</button>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Modal Update-->
-                                    <div class="modal fade" id="@idFeed" tabindex="-1"
-                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form method="POST" action="/AdminEvent/Feedback" class="register-form" id="register-form" enctype="multipart/form-data">
-                                                        <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
-                                                        <div class="mb-3">
-                                                            <label for="category-film"
-                                                                   class="col-form-label">Event:</label>
-                                                            <input type="text" class="form-control" id="category-film" readonly value="@item.name">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="category-film"
-                                                                   class="col-form-label">Content Feedback:</label>
-                                                            <textarea name="content" class="form-control" cols="30"
-                                                                      rows="5"></textarea>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">
-                                                                Close
-                                                            </button>
-                                                            <button type="submit" class="btn btn-primary">Send</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            <!-- Modal Des-->
-                            <div class="modal fade" id="@idEx1" tabindex="-1"
-                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Event : @item.name</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="col">
-                                                <div class="row">
-                                                    <div class="col-6 mb-1">
-                                                        <label for="category-film"
-                                                               class="col-form-label" style="width : 160px !important"><strong>Organization date </strong></label>: @String.Format("{0:dd-MM-yyyy}", item.date)
-                                                        </div>
-                                                        <div class="col-6 mb-1">
-                                                            <label for="category-film"
-                                                                   class="col-form-label" style="width : 160px !important"><strong>Participant</strong></label>: @item.participant
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-6 mb-1">
-                                                                <label for="category-film"
-                                                                       class="col-form-label" style="width : 160px !important"><strong>Poster</strong></label>: @item.User.userName
-                                                                </div>
-                                                                <div class="col-6 mb-1">
-                                                                    <label for="category-film"
-                                                                           class="col-form-label" style="width : 160px !important"><strong>Guest</strong></label>: @item.Guest.name
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-6 mb-1">
-                                                                        <label for="category-film"
-                                                                               class="col-form-label" style="width : 160px !important"><strong>Organier</strong></label>: @item.Organiser.name
-                                                                        </div>
-                                                                        <div class="col-6 mb-1">
-                                                                            <label for="category-film"
-                                                                                   class="col-form-label" style="width : 160px !important"><strong>Cooperative</strong></label>: @item.Cooperative.name
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-6 mb-1">
-                                                                                <label for="category-film"
-                                                                                       class="col-form-label" style="width : 160px !important"><strong>Category</strong></label>: @item.Category.name
-                                                                                </div>
-                                                                                <div class="col-6 mb-1">
-                                                                                    <label for="category-film"
-                                                                                           class="col-form-label" style="width : 160px !important"><strong>Status</strong></label>@if (item.status == 0)
-                                                                                    {
-                                                                                        <span>: Pending</span>
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        <span>: Approve</span>
-                                                                                    }
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <div class="col-12">
-                                                                                        <label for="category-film"
-                                                                                               class="col-form-label" style="width : 160px !important"><strong>Content</strong></label>
-                                                                                        <p>@Html.Raw(item.content)</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </tr>
-                                                        stt++;
-                                                    }
+                        </tr>
+                        
+                        stt++;
+                    }
                 </tbody>
             </table>
         </div>
