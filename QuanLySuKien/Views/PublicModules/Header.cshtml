@@ -11,14 +11,14 @@
         <ul class="navbar-nav ml-auto">
 
             <li class="nav-item"><a href="/PublicHome/Index" class="nav-link">Home</a></li>
-            <li class="nav-item "><a href="/PublicHome/Event" class="nav-link">Event</a></li>
+            <li class="nav-item "><a href="/PublicHome/Event/0" class="nav-link">Event</a></li>
             <li class="nav-item dropdown position-relative">
                 <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
                 <div class="dropdown-menu">
                     <ul>
                         @foreach (var item in listCategory)
                         {
-                            <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="/PublicCategory/GetCategoryById/@item.idCategory">@item.name</a></li>
+                            <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="/PublicCategory/GetCategoryById/@item.idCategory/0">@item.name</a></li>
                         }
 
                     </ul>

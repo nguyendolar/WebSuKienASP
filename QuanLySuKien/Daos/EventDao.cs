@@ -86,5 +86,55 @@ namespace QuanLySuKien.Daos
             myDb.events.Remove(obj);
             myDb.SaveChanges();
         }
+
+
+        public List<Event> GetEvent(int page, int pagesize)
+        {
+            return myDb.events.Where(x => x.status == 1).OrderByDescending(x => x.date).ToList().Skip((page - 1) * pagesize).Take(pagesize).ToList();
+        }
+        public int GetEventRoom()
+        {
+            int total = myDb.events.Where(x => x.status ==1).Count();
+            int count = 0;
+            count = total / 6;
+            if (total % 6 != 0)
+            {
+                count++;
+            }
+            return count;
+        }
+
+        public List<Event> GetEventByCategory(int page, int pagesize,int categoryId)
+        {
+            return myDb.events.Where(x => x.status == 1 && x.idCategory == categoryId).OrderByDescending(x => x.date).ToList().Skip((page - 1) * pagesize).Take(pagesize).ToList();
+        }
+        public int GetEventBycategoryNumber(int categoryId)
+        {
+            int total = myDb.events.Where(x => x.status == 1 && x.idCategory == categoryId).Count();
+            int count = 0;
+            count = total / 6;
+            if (total % 6 != 0)
+            {
+                count++;
+            }
+            return count;
+        }
+
+        public List<Event> SearchByName(int page, int pagesize, string name)
+        {
+            return myDb.events.Where(x => x.name.Contains(name) && x.status == 1).ToList().Skip((page - 1) * pagesize).Take(pagesize).ToList();
+        }
+
+        public int GetNumberEventByName(string name)
+        {
+            int total = myDb.events.Where(x => x.name.Contains(name) && x.status == 1).ToList().Count;
+            int count = 0;
+            count = total / 6;
+            if (total % 6 != 0)
+            {
+                count++;
+            }
+            return count;
+        }
     }
 }

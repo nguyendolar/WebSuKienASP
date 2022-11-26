@@ -17,53 +17,36 @@ namespace QuanLySuKien.Controllers.Public
         GuestDao guestDao = new GuestDao();
         // GET: PublicHome
         public ActionResult Index()
-        {
-            User user = (User)Session["USER"];
-            if (user == null)
-            {
-                return RedirectToAction("Login", "PublicAuthentication");
-            }
-            else
-            {
-                ViewBag.List = eventDao.GetTopSix();
-                ViewBag.Category = categoryDao.getAll();
-                ViewBag.Organsier = organsierDao.getAll();
-                ViewBag.Cooperative = cooperativeDao.getAll();
-                ViewBag.Guest = guestDao.getAll();
-                return View();
-            }
+        {       
+            ViewBag.List = eventDao.GetTopSix();
+            ViewBag.Category = categoryDao.getAll();
+            ViewBag.Organsier = organsierDao.getAll();
+            ViewBag.Cooperative = cooperativeDao.getAll();
+            ViewBag.Guest = guestDao.getAll();
+            return View();
         }
-        public ActionResult Event()
+        public ActionResult Event(int page)
         {
-            User user = (User)Session["USER"];
-            if (user == null)
-            {
-                return RedirectToAction("Login", "PublicAuthentication");
-            }
-            else
-            {
-                ViewBag.List = eventDao.GetTopSix();
+                if (page == 0)
+                {
+                    page = 1;
+                }
+                ViewBag.List = eventDao.GetEvent(page, 6);
+                ViewBag.tag = page;
+                ViewBag.pageSize = eventDao.GetEventRoom();
                 ViewBag.Category = categoryDao.getAll();
                 ViewBag.Organsier = organsierDao.getAll();
                 ViewBag.Cooperative = cooperativeDao.getAll();
                 ViewBag.Guest = guestDao.getAll();
                 return View();
-            }
         }
 
         public ActionResult DetailEvent(int id)
         {
-            User user = (User)Session["USER"];
-            if (user == null)
-            {
-                return RedirectToAction("Login", "PublicAuthentication");
-            }
-            else
-            {
+
                 Event obj = eventDao.getById(id);
                 ViewBag.Event = obj;
                 return View();
-            }
         }
     }
 }

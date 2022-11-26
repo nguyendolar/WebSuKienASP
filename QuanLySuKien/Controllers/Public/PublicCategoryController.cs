@@ -18,20 +18,20 @@ namespace QuanLySuKien.Controllers.Public
             return View();
         }
 
-        public ActionResult GetCategoryById(int id)
+        public ActionResult GetCategoryById(int id,int page)
         {
-            User user = (User)Session["USER"];
-            if (user == null)
-            {
-                return RedirectToAction("Login", "PublicAuthentication");
-            }
-            else
-            {
                 Category category = categoryDao.getById(id);
+                if (page == 0)
+                {
+                    page = 1;
+                }
+                ViewBag.List = eventDao.GetEventByCategory(page, 6, id);
+                ViewBag.tag = page;
+                ViewBag.pageSize = eventDao.GetEventBycategoryNumber(id);
+                ViewBag.CategoryId = id;
                 ViewBag.category = category;
                 ViewBag.events = eventDao.getByCategory(category.idCategory);
                 return View();
-            }
         }
     }
 }

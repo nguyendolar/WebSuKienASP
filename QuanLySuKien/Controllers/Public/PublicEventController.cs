@@ -164,5 +164,27 @@ namespace QuanLySuKien.Controllers.Public
             eventDao.Add(evt);
             return RedirectToAction("Index", new { msg = "1" });
         }
+
+
+        [HttpPost]
+        public ActionResult Search(FormCollection form)
+        {
+            string name = form["name"];
+            return RedirectToAction("Search", new { page = 0, name = name });
+        }
+
+        [HttpGet]
+        public ActionResult Search(int page, string name)
+        {          
+            if (page == 0)
+            {
+                page = 1;
+            }
+            ViewBag.List = eventDao.SearchByName(page, 2,name);
+            ViewBag.pageSize = eventDao.GetNumberEventByName(name);
+            ViewBag.tag = page;
+            ViewBag.name = name;
+            return View();
+        }
     }
 }

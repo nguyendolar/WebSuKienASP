@@ -987,6 +987,7 @@
     <Content Include="Views\PublicEvent\Add.cshtml" />
     <Content Include="Views\PublicInformation\Index.cshtml" />
     <Content Include="Views\PublicEvent\Update.cshtml" />
+    <Content Include="Views\PublicEvent\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Event";
+    ViewBag.Title = "Search";
     Layout = "~/Views/Shared/_LayoutPublic.cshtml";
 }
 
@@ -9,8 +9,8 @@
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
             <div class="col-md-9 text-center" style="margin-top: 200px" data-scrollax=" properties: { translateY: '70%' }">
-                <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Category</a></span> <span>@ViewBag.category.name</span></p>
-                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">List of  events by category</h1>
+                <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span>Search</span></p>
+                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Kết quả tìm kiếm</h1>
                 <div class="block-17 my-4">
                     <form action="/PublicEvent/Search" method="post" class="d-block d-flex">
                         <div class="fields d-block d-flex">
@@ -23,15 +23,17 @@
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 <section class="ftco-section ftco-degree-bg">
     <div class="container-fluid">
+        Kết quả tìm kiếm cho từ khóa : <span style="font-weight:bold"> @ViewBag.name</span>
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
-                    @foreach (var item in ViewBag.events)
+                    @foreach (var item in ViewBag.List)
                     {
                         <div class="col-md-4">
                             <div class="destination">
@@ -67,7 +69,7 @@
                         @if (ViewBag.tag > 1)
                         {
                             int b = ViewBag.tag - 1;
-                            <li><a href="/PublicCategory/GetCategoryById/@ViewBag.CategoryId/@b">&lt;</a></li>
+                            <li><a href="/PublicEvent/Search/@b/@ViewBag.name">&lt;</a></li>
 
                         }
                         else
@@ -78,11 +80,11 @@
                         {
                             if (ViewBag.tag == i)
                             {
-                                <li class="active"><a href="/PublicCategory/GetCategoryById/@ViewBag.CategoryId/@i">@i</a></li>
+                                <li class="active"><a href="/PublicEvent/Search/@i/@ViewBag.name">@i</a></li>
                             }
                             else
                             {
-                                <li><a href="/PublicCategory/GetCategoryById/@ViewBag.CategoryId/@i">@i</a></li>
+                                <li><a href="/PublicEvent/Search/@i/@ViewBag.name">@i</a></li>
                             }
 
                         }
@@ -90,7 +92,7 @@
                         @if (ViewBag.tag < ViewBag.pageSize)
                         {
                             int a = ViewBag.tag + 1;
-                            <li><a href="/PublicCategory/GetCategoryById/@ViewBag.CategoryId/@a">&gt;</a></li>
+                            <li><a href="/PublicEvent/Search/@a/@ViewBag.name">&gt;</a></li>
 
                         }
                         else
