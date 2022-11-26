@@ -1,0 +1,48 @@
+﻿<div class="container">
+    <a class="navbar-brand" href="/PublicHome/Index">Event Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+    </button>
+    @{ var userInfomatiom = (QuanLySuKien.Models.User)Session["USER"];
+        QuanLySuKien.Daos.CategoryDao categoryDao = new QuanLySuKien.Daos.CategoryDao();
+        var listCategory = (List<QuanLySuKien.Models.Category>)categoryDao.getAll();
+        }
+    <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item"><a href="/PublicHome/Index" class="nav-link">Home</a></li>
+            <li class="nav-item "><a href="/PublicHome/Event" class="nav-link">Event</a></li>
+            <li class="nav-item dropdown position-relative">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        @foreach (var item in listCategory)
+                        {
+                            <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="/PublicCategory/GetCategoryById/@item.idCategory">@item.name</a></li>
+                        }
+
+                    </ul>
+                </div>
+            </li>
+            @if (userInfomatiom != null)
+            {
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">@userInfomatiom.userName</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item"  href="/PublicInformation/Index">Information</a></li>
+                            <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="/PublicEvent/Index">My Event</a></li>
+                            <li><i class="lni-angle-double-right right-arrow"></i><a class="dropdown-item" href="/PublicAuthentication/Logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            }
+            else
+            {
+                <li class="nav-item cta"><a href="/PublicAuthentication/Login" class="nav-link"><span>Login</span></a></li>
+            }
+
+        </ul>
+    </div>
+</div>

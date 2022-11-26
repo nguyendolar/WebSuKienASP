@@ -1,0 +1,213 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h4 class="mt-1">List of student accounts</h4>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                @if (ViewBag.Msg != null)
+                {
+                    if (ViewBag.Msg == "1")
+                    {
+                        <div class="alert alert-success">
+                            <strong>Successful!</strong>
+                        </div>
+                    }
+                    if (ViewBag.Msg == "2")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Can not delete!</strong>
+                        </div>
+                    }
+                    if (ViewBag.Msg == "3")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Already exist!</strong>
+                        </div>
+                    }
+                }
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalAdd">
+                    Add new
+                </button>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalExcel">
+                    Import Excel
+                </button>
+            </div>
+
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead style="color: whitesmoke ">
+                        <tr style="background-color: #4CACBC">
+                            <th>#</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ var stt = 1;}
+                        @foreach (var item in ViewBag.List)
+                        {
+                            <tr>
+                                <td style="width:150px">@stt</td>
+                                <td>
+                                    @item.userName
+                                </td>
+                                <td>
+                                    @item.password
+                                </td>
+                                <td style="width:250px">
+                                    @{
+                                        var idEx1 = "exampleModalLabel" + item.idUser;
+                                        var idModelDel = "exampleModalDel" + item.idUser;
+                                    }
+                                    <button style="width:100px" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#@idEx1">
+                                        Edit
+                                    </button>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#@idModelDel" style="width:100px" class="btn btn-danger"> Delete</button>
+                                </td>
+                                <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Are you sure delete ?</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                Student account : @item.userName
+                                                <form action="/AdminUser/Delete" method="post">
+                                                    <input type="hidden" class="form-control" id="id" name="idUser" value="@item.idUser">
+                                                    <div class="modal-footer" style="margin-top: 20px">
+                                                        <button style="width:100px" type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">
+                                                            Close
+                                                        </button>
+                                                        <button style="width:100px" type="submit" class="btn btn-danger"> Delete</button>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Update-->
+                                <div class="modal fade" id="@idEx1" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form method="POST" action="/AdminUser/Update" class="register-form" id="register-form" enctype="multipart/form-data">
+                                                    <input type="hidden" class="form-control" id="id" name="idUser" value="@item.idUser">
+                                                    <div class="mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Username:</label>
+                                                        <input type="text" class="form-control" id="category-film" name="userName" required value="@item.userName">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Password:</label>
+                                                        <input type="text" class="form-control" id="category-film" name="password" required value="@item.password">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">
+                                                            Close
+                                                        </button>
+                                                        <button type="submit" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </tr>
+                            stt++;
+                        }
+                        <div class="modal fade" id="exampleModalAdd" tabindex="-1"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Add new</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="POST" action="/AdminUser/Add" class="register-form" id="register-form" enctype="multipart/form-data">
+                                            <div class="mb-3">
+                                                <label for="category-film"
+                                                       class="col-form-label">Username:</label>
+                                                <input type="text" class="form-control" id="category-film" name="userName" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="category-film"
+                                                       class="col-form-label">Password:</label>
+                                                <input type="text" class="form-control" id="category-film" name="password" required>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="submit" class="btn btn-primary">Save </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalExcel" tabindex="-1"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Import Excel</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="POST" action="/AdminUser/ReadExcel" class="register-form" id="register-form" enctype="multipart/form-data">
+                                            <div class="mb-3">
+                                                <label for="category-film"
+                                                       class="col-form-label">Upload File Excel:</label>
+                                                <input type="file" class="form-control" id="category-film" name="fileExcel" required>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="submit" class="btn btn-primary">Save </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+

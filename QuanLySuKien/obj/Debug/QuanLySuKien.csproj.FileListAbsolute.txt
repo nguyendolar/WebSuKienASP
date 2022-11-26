@@ -1,0 +1,455 @@
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll.config
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.pdb
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe.config
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.rsp
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe.config
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.rsp
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.AppContext.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Collections.Immutable.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Console.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Http.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Sockets.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.ValueTuple.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe.config
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.rsp
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe.config
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EntityFramework.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Microsoft.Web.Infrastructure.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\WebGrease.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EntityFramework.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.pdb
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.AssemblyReference.cache
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CoreCompileInputs.cache
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CopyComplete
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.pdb
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.Migrations._new.resources
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.GenerateResource.cache
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll.config
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.pdb
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe.config
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.rsp
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe.config
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.rsp
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.AppContext.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Collections.Immutable.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Console.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Globalization.Calendars.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Http.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Sockets.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Reflection.Metadata.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.ValueTuple.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe.config
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.rsp
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe.config
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EntityFramework.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Microsoft.Web.Infrastructure.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\WebGrease.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EntityFramework.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.pdb
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csprojAssemblyReference.cache
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.Migrations._new.resources
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.GenerateResource.cache
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CoreCompileInputs.cache
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CopyComplete
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.pdb
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EPPlus.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EPPlus.Interfaces.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EPPlus.System.Drawing.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\EPPlus.xml
+D:\.NET MVC\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EPPlus.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EPPlus.Interfaces.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EPPlus.System.Drawing.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\EPPlus.xml
+D:\Project Asp.Net\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll.config
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.pdb
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe.config
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.rsp
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe.config
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.rsp
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.AppContext.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Console.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Http.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe.config
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.rsp
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EntityFramework.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EPPlus.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EPPlus.Interfaces.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EPPlus.System.Drawing.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\WebGrease.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EntityFramework.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\EPPlus.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.Migrations._new.resources
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CopyComplete
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.dll
+C:\Users\Administrator\Downloads\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.pdb
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll.config
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.pdb
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe.config
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.rsp
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe.config
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.rsp
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.AppContext.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Collections.Immutable.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Console.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Globalization.Calendars.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Http.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Sockets.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Reflection.Metadata.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.ValueTuple.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe.config
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.rsp
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe.config
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EntityFramework.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EPPlus.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EPPlus.Interfaces.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EPPlus.System.Drawing.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Microsoft.Web.Infrastructure.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\WebGrease.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EntityFramework.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\EPPlus.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.pdb
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.AssemblyReference.cache
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.Migrations._new.resources
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.GenerateResource.cache
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CoreCompileInputs.cache
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CopyComplete
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.dll
+F:\Graduate thesis\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.pdb
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll.config
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\QuanLySuKien.pdb
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.exe.config
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\csc.rsp
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.exe.config
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\csi.rsp
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.AppContext.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Collections.Immutable.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Console.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Globalization.Calendars.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Http.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Net.Sockets.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Reflection.Metadata.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.ValueTuple.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.exe.config
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\vbc.rsp
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\roslyn\VBCSCompiler.exe.config
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EntityFramework.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EPPlus.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EPPlus.Interfaces.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EPPlus.System.Drawing.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Microsoft.Web.Infrastructure.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\WebGrease.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EntityFramework.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EntityFramework.SqlServer.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\EPPlus.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Helpers.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Mvc.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Optimization.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.Razor.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Deployment.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\System.Web.WebPages.Razor.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Newtonsoft.Json.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Antlr3.Runtime.pdb
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csprojAssemblyReference.cache
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.Migrations._new.resources
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.GenerateResource.cache
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CoreCompileInputs.cache
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.csproj.CopyComplete
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.dll
+D:\.NET MVC\Nháp\QuanLySuKien\QuanLySuKien\obj\Debug\QuanLySuKien.pdb

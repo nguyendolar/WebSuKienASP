@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "DetailEvent";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+
+<div class="hero-wrap" style="background-image: url('/Content/images/banner3.png'); height: 700px !important ">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-9 text-center" style="margin-top: 200px" data-scrollax=" properties: { translateY: '70%' }">
+                <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span>Detail Event</span></p>
+                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Detail Event</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="ftco-section ftco-degree-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h2>@ViewBag.Event.name</h2>
+                <div class="rate mb-5">
+                    <p><span style="font-weight:bold">Category :</span>  @ViewBag.Event.Category.name</p>
+                    <p><span style="font-weight:bold">Organization date :</span> @String.Format("{0:dd-MM-yyyy}", ViewBag.Event.date) </p>
+                    <p><span style="font-weight:bold">Participant :</span> @ViewBag.Event.participant</p>
+                    <p><span style="font-weight:bold">Poster </span>: @ViewBag.Event.User.userName </p>
+                    <p><span style="font-weight:bold">Guest :</span> @ViewBag.Event.Guest.name</p>
+                    <p><span style="font-weight:bold">Organier :</span> @ViewBag.Event.Organiser.name </p>
+                    <p><span style="font-weight:bold">Cooperative :</span> @ViewBag.Event.Cooperative.name</p>
+                    
+                   
+                </div>
+
+            </div>
+            <div class="col-md-6 ">
+                <div class="item">
+                    <img style="width: 100%;object-fit: cover; height : 327px" src="/Content/images/@ViewBag.Event.image" class="hotel-img" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 ">
+                <p><span style="font-weight:bold">Content :</span></p>
+                <p>@Html.Raw(ViewBag.Event.content)</p>
+            </div>
+        </div>
+</section>
+

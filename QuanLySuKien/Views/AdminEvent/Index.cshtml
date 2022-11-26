@@ -1,0 +1,374 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h4 class="mt-1">List of events</h4>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                @if (ViewBag.Msg != null)
+                {
+                    if (ViewBag.Msg == "1")
+                    {
+                        <div class="alert alert-success">
+                            <strong>Successful!</strong>
+                        </div>
+                    }
+                    if (ViewBag.Msg == "2")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Can not delete!</strong>
+                        </div>
+                    }
+                    if (ViewBag.Msg == "5")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>
+                                Organization date must be 2 days older than current date!
+                            </strong>
+                        </div>
+                    }
+                }
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalAdd">
+                    Add new
+                </button>
+            </div>
+
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead style="color: whitesmoke ">
+                        <tr style="background-color: #4CACBC">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Organization date</th>
+                            <th>Category</th>
+                            <th>Poster</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ var stt = 1;}
+                        <input type="hidden" value="@ViewBag.List.Count" id="dodai" />
+                        @foreach (var item in ViewBag.List)
+                        {
+                    <tr>
+                        <td style="width:10px">@stt</td>
+                        <td>
+                            @item.name
+                        </td>
+                        <td style="width:200px">
+                            <img style="width: 200px !important;height: 150px !important;" src="~/Content/images/@item.image"
+                                 class="img-fluid">
+                        </td>
+                        <td>
+                            @String.Format("{0:dd-MM-yyyy}", item.date)
+                        </td>
+                        <td>
+                            @item.Category.name
+                        </td>
+                        <td>
+                            @item.User.userName
+                        </td>
+                        <td>
+                            @if (item.status == 0)
+                            {
+                            <span>Pending</span>
+                            }
+                            else
+                            {
+                        <span>Approved</span>
+                            }
+                        </td>
+                        <td style="width:340px">
+                            @{
+                                var idEx1 = "exampleModalLabel" + item.idEvent;
+                                var idAppro = "exampleModalLabelAppro" + item.idEvent;
+                                var idFeed = "exampleModalLabeFeedl" + item.idEvent;
+                                var idModelDel = "exampleModalDel" + item.idEvent;
+                                var edit = "comment" + stt;
+                            }
+                            <button style="width:80px" type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                    data-bs-target="#@idEx1">
+                                Detail
+                            </button>
+                            @if (item.status == 0)
+                            {
+                                <button style="width:90px" type="button" class="btn btn-info"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#@idAppro">
+                                    Approve
+                                </button>
+                            }
+                                <button style="width:95px" type="button" class="btn btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#@idFeed">
+                                    Feedback
+                                </button>
+                                <div class="modal fade" id="@idAppro" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Are you sure approve ?</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                Event : @item.name
+                                                <form action="/AdminEvent/Approvel" method="post">
+                                                    <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
+                                                    <input type="hidden" class="form-control" id="id" name="idEvent" value="@item.idEvent">
+                                                    <div class="modal-footer" style="margin-top: 20px">
+                                                        <button style="width:100px" type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">
+                                                            Close
+                                                        </button>
+                                                        <button style="width:100px" type="submit" class="btn btn-danger"> Approve</button>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Update-->
+                                <div class="modal fade" id="@idFeed" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form method="POST" action="/AdminEvent/Feedback" class="register-form" id="register-form" enctype="multipart/form-data">
+                                                    <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
+                                                    <div class="mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Event:</label>
+                                                        <input type="text" class="form-control" id="category-film" readonly value="@item.name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Content Feedback:</label>
+                                                        <textarea name="content" class="form-control" cols="30"
+                                                                  rows="5"></textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">
+                                                            Close
+                                                        </button>
+                                                        <button type="submit" class="btn btn-primary">Send</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        <!-- Modal Des-->
+                        <div class="modal fade" id="@idEx1" tabindex="-1"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Event : @item.name</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-6 mb-1">
+                                                    <label for="category-film"
+                                                           class="col-form-label" style="width : 160px !important"><strong>Organization date </strong></label>: @String.Format("{0:dd-MM-yyyy}", item.date)
+                                                    </div>
+                                                <div class="col-6 mb-1">
+                                                    <label for="category-film"
+                                                           class="col-form-label" style="width : 160px !important"><strong>Participant</strong></label>: @item.participant
+                                                    </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6 mb-1">
+                                                            <label for="category-film"
+                                                                   class="col-form-label" style="width : 160px !important"><strong>Poster</strong></label>: @item.User.userName
+                                                            </div>
+                                                        <div class="col-6 mb-1">
+                                                            <label for="category-film"
+                                                                   class="col-form-label" style="width : 160px !important"><strong>Guest</strong></label>: @item.Guest.name
+                                                            </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-6 mb-1">
+                                                                    <label for="category-film"
+                                                                           class="col-form-label" style="width : 160px !important"><strong>Organier</strong></label>: @item.Organiser.name
+                                                                    </div>
+                                                                    <div class="col-6 mb-1">
+                                                                        <label for="category-film"
+                                                                               class="col-form-label" style="width : 160px !important"><strong>Cooperative</strong></label>: @item.Cooperative.name
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-6 mb-1">
+                                                                            <label for="category-film"
+                                                                                   class="col-form-label" style="width : 160px !important"><strong>Category</strong></label>: @item.Category.name
+                                                                            </div>
+                                                                            <div class="col-6 mb-1">
+                                                                                <label for="category-film"
+                                                                                       class="col-form-label" style="width : 160px !important"><strong>Status</strong></label>@if (item.status == 0)
+                                                                                {
+                                                                                    <span>: Pending</span>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <span>: Approved</span>
+                                                                                }
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <label for="category-film"
+                                                                                       class="col-form-label" style="width : 160px !important"><strong>Content</strong></label>
+                                                                                <p>@Html.Raw(item.content)</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </tr>
+                                                        stt++;
+                                                    }
+                        <div class="modal fade" id="exampleModalAdd" tabindex="-1"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Add New</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="POST" action="/AdminEvent/Add" class="register-form" id="register-form" enctype="multipart/form-data">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col-6 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Name:</label>
+                                                        <input type="text" class="form-control" id="category-film" name="name" required>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Organization date:</label>
+                                                        <input type="date" class="form-control" id="category-film" name="date" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Category:</label>
+                                                        <select class="form-select" aria-label="Default select example" id="theloai" tabindex="8" name="idCategory" required>
+                                                            <option selected value="">Choose one</option>
+                                                            @foreach (var item3 in ViewBag.Category)
+                                                            {
+                                                                <option value="@item3.idCategory">@item3.name</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Participant:</label>
+                                                        <input type="text" class="form-control" id="category-film" name="participant" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Guest:</label>
+                                                        <select class="form-select" aria-label="Default select example" id="theloai" tabindex="8" name="idGuest" required>
+                                                            <option selected value="">Choose one</option>
+                                                            @foreach (var item4 in ViewBag.Guest)
+                                                            {
+                                                                <option value="@item4.idGuest">@item4.name</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Organier:</label>
+                                                        <select class="form-select" aria-label="Default select example" id="theloai" tabindex="8" name="idOrganiser" required>
+                                                            <option selected value="">Choose one</option>
+                                                            @foreach (var item5 in ViewBag.Organsier)
+                                                            {
+                                                                <option value="@item5.idOrganiser">@item5.name</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Cooperative:</label>
+                                                        <select class="form-select" aria-label="Default select example" id="theloai" tabindex="8" name="idCooperative" required>
+                                                            <option selected value="">Choose one</option>
+                                                            @foreach (var item6 in ViewBag.Cooperative)
+                                                            {
+                                                                <option value="@item6.idCooperative">@item6.name</option>
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Image:</label><br />
+                                                        <input type="file" name="file" class="form-control-file"
+                                                               id="exampleFormControlFile1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 mb-3">
+                                                        <label for="category-film"
+                                                               class="col-form-label">Content:</label>
+                                                        <textarea name="content" id="editor" cols="30"
+                                                                  rows="30"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="submit" class="btn btn-primary">Save </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+
+            CKEDITOR.replace("editor");
+
+</script>
+

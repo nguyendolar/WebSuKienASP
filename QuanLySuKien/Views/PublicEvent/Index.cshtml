@@ -1,0 +1,286 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+<div class="hero-wrap " style="background-image: url('/Content/images/banner3.png'); height: 700px !important ">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-9 text-center" style="margin-top: 200px" data-scrollax=" properties: { translateY: '70%' }" >
+                <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span>Management Events</span></p>
+                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Management Events</h1>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ViewBag.Msg != null)
+{
+    if (ViewBag.Msg == "1")
+    {
+        <script>
+            swal({
+                title: 'Successfully!',
+                /* text: 'Redirecting...', */
+                icon: 'success',
+                timer: 3000,
+                buttons: true,
+                type: 'success'
+            })
+        </script>
+    }
+    if (ViewBag.Msg == "4")
+    {
+        <script>
+            swal({
+                title: 'You need update information!',
+                /* text: 'Redirecting...', */
+                icon: 'error',
+                timer: 3000,
+                buttons: true,
+                type: 'error'
+            })
+        </script>
+    }
+    if (ViewBag.Msg == "5")
+    {
+        <script>
+            swal({
+                title: 'You need update email!',
+                /* text: 'Redirecting...', */
+                icon: 'error',
+                timer: 3000,
+                buttons: true,
+                type: 'error'
+            })
+        </script>
+    }
+
+    if (ViewBag.Msg == "6")
+    {
+        <script>
+            swal({
+                title: '  Organization date must be 2 days older than current date!',
+                /* text: 'Redirecting...', */
+                icon: 'error',
+                timer: 3000,
+                buttons: true,
+                type: 'error'
+            })
+        </script>
+       
+    }
+}
+
+<section class="ftco-section ftco-degree-bg">
+    <div class="container-fluid">
+        <a type="button" style="margin-left:15px !important" class="btn btn-success" href="/PublicEvent/Add">
+            Add Event
+        </a>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead style="color: whitesmoke">
+                    <tr style="background-color: #4CACBC">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Organization date</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{ var stt = 1;}
+                    <input type="hidden" value="@ViewBag.List.Count" id="dodai" />
+                    @foreach (var item in ViewBag.List)
+                    {
+                        <tr>
+                            <td style="width:10px">@stt</td>
+                            <td>
+                                @item.name
+                            </td>
+                            <td>
+                                <img style="width: 200px !important;height: 150px !important;" src="~/Content/images/@item.image"
+                                     class="img-fluid">
+                            </td>
+                            <td>
+                                @String.Format("{0:dd-MM-yyyy}", item.date)
+                            </td>
+                            <td>
+                                @item.Category.name
+                            </td>
+                            <td>
+                                @if (item.status == 0)
+                                {
+                                    <span>Pending</span>
+                                }
+                                else
+                                {
+                                    <span>Approved</span>
+                                }
+                            </td>
+                            <td style="width:300px">
+                                @{
+                                    var idEx1 = "exampleModalLabel" + item.idEvent;
+                                    var idAppro = "exampleModalLabelAppro" + item.idEvent;
+                                    var idFeed = "exampleModalLabeFeedl" + item.idEvent;
+                                    var idModelDel = "exampleModalDel" + item.idEvent;
+                                    var edit = "comment" + stt;
+                                }
+                                <a style="width:80px" type="button" class="btn btn-warning" href="/PublicHome/DetailEvent/@item.idEvent">
+                                    Detail
+                                </a>
+                                @if (item.status == 0)
+                                {
+                                    <a style="width:95px" type="button" class="btn btn-info" href="/PublicEvent/Update/@item.idEvent">
+                                        Edit
+                                    </a>
+                                }
+                                    <div class="modal fade" id="@idAppro" tabindex="-1"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Are you sure approve ?</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    Event : @item.name
+                                                    <form action="/AdminEvent/Approvel" method="post">
+                                                        <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
+                                                        <input type="hidden" class="form-control" id="id" name="idEvent" value="@item.idEvent">
+                                                        <div class="modal-footer" style="margin-top: 20px">
+                                                            <button style="width:100px" type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">
+                                                                Close
+                                                            </button>
+                                                            <button style="width:100px" type="submit" class="btn btn-danger"> Approve</button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal Update-->
+                                    <div class="modal fade" id="@idFeed" tabindex="-1"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form method="POST" action="/AdminEvent/Feedback" class="register-form" id="register-form" enctype="multipart/form-data">
+                                                        <input type="hidden" class="form-control" id="id" name="id_user" value="@item.User.idUser">
+                                                        <div class="mb-3">
+                                                            <label for="category-film"
+                                                                   class="col-form-label">Event:</label>
+                                                            <input type="text" class="form-control" id="category-film" readonly value="@item.name">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="category-film"
+                                                                   class="col-form-label">Content Feedback:</label>
+                                                            <textarea name="content" class="form-control" cols="30"
+                                                                      rows="5"></textarea>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">
+                                                                Close
+                                                            </button>
+                                                            <button type="submit" class="btn btn-primary">Send</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            <!-- Modal Des-->
+                            <div class="modal fade" id="@idEx1" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Event : @item.name</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col-6 mb-1">
+                                                        <label for="category-film"
+                                                               class="col-form-label" style="width : 160px !important"><strong>Organization date </strong></label>: @String.Format("{0:dd-MM-yyyy}", item.date)
+                                                        </div>
+                                                        <div class="col-6 mb-1">
+                                                            <label for="category-film"
+                                                                   class="col-form-label" style="width : 160px !important"><strong>Participant</strong></label>: @item.participant
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6 mb-1">
+                                                                <label for="category-film"
+                                                                       class="col-form-label" style="width : 160px !important"><strong>Poster</strong></label>: @item.User.userName
+                                                                </div>
+                                                                <div class="col-6 mb-1">
+                                                                    <label for="category-film"
+                                                                           class="col-form-label" style="width : 160px !important"><strong>Guest</strong></label>: @item.Guest.name
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-6 mb-1">
+                                                                        <label for="category-film"
+                                                                               class="col-form-label" style="width : 160px !important"><strong>Organier</strong></label>: @item.Organiser.name
+                                                                        </div>
+                                                                        <div class="col-6 mb-1">
+                                                                            <label for="category-film"
+                                                                                   class="col-form-label" style="width : 160px !important"><strong>Cooperative</strong></label>: @item.Cooperative.name
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-6 mb-1">
+                                                                                <label for="category-film"
+                                                                                       class="col-form-label" style="width : 160px !important"><strong>Category</strong></label>: @item.Category.name
+                                                                                </div>
+                                                                                <div class="col-6 mb-1">
+                                                                                    <label for="category-film"
+                                                                                           class="col-form-label" style="width : 160px !important"><strong>Status</strong></label>@if (item.status == 0)
+                                                                                    {
+                                                                                        <span>: Pending</span>
+                                                                                    }
+                                                                                    else
+                                                                                    {
+                                                                                        <span>: Approve</span>
+                                                                                    }
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-12">
+                                                                                        <label for="category-film"
+                                                                                               class="col-form-label" style="width : 160px !important"><strong>Content</strong></label>
+                                                                                        <p>@Html.Raw(item.content)</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </tr>
+                                                        stt++;
+                                                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

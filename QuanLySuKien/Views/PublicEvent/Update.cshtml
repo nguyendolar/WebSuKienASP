@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_LayoutPublic.cshtml";
+}
+<div class="hero-wrap " style="background-image: url('/Content/images/banner3.png'); height: 700px !important ">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-9 text-center" style="margin-top: 200px" data-scrollax=" properties: { translateY: '70%' }">
+                <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span>Management Events</span></p>
+                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Update Event</h1>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ViewBag.Msg != null)
+{
+    if (ViewBag.Msg == "1")
+    {
+        <script>
+            swal({
+                title: 'Successfully!',
+                /* text: 'Redirecting...', */
+                icon: 'success',
+                timer: 3000,
+                buttons: true,
+                type: 'success'
+            })
+        </script>
+    }
+    if (ViewBag.Msg == "4")
+    {
+        <script>
+            swal({
+                title: 'You need update information!',
+                /* text: 'Redirecting...', */
+                icon: 'error',
+                timer: 3000,
+                buttons: true,
+                type: 'error'
+            })
+        </script>
+    }
+    if (ViewBag.Msg == "5")
+    {
+        <script>
+            swal({
+                title: 'You need update email!',
+                /* text: 'Redirecting...', */
+                icon: 'error',
+                timer: 3000,
+                buttons: true,
+                type: 'error'
+            })
+        </script>
+    }
+
+    if (ViewBag.Msg == "6")
+    {
+        <script>
+            swal({
+                title: '  Organization date must be 2 days older than current date!',
+                /* text: 'Redirecting...', */
+                icon: 'error',
+                timer: 3000,
+                buttons: true,
+                type: 'error'
+            })
+        </script>
+
+    }
+}
+<section class="ftco-section ftco-degree-bg">
+    <div class="container-fluid">
+        <form method="POST" action="/PublicEvent/Update" class="register-form" id="register-form" enctype="multipart/form-data">
+            <div class="col">
+                <div class="row">
+                    <input type="hidden" class="form-control" value="@ViewBag.Event.idEvent" id="category-film" name="idEvent" required>
+                    <div class="col-6 mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" value="@ViewBag.Event.name" id="category-film" name="name" required>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Organization date:</label>
+                        <input type="date" class="form-control" value="@String.Format("{0:yyyy-MM-dd}", ViewBag.Event.date)" id="category-film" name="date" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <p for="category-film"
+                           class="col-form-label">Category:</p>
+                        <select class="form-select" style="width: 100%; height: 50px; border-color: #CCCCCC" aria-label="Default select example" id="theloai" tabindex="8" name="idCategory" required>
+                            <option selected value="@ViewBag.Event.Category.idCategory">@ViewBag.Event.Category.name</option>
+                            @foreach (var item3 in ViewBag.Category)
+                            {
+                                <option value="@item3.idCategory">@item3.name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Participant:</label>
+                        <input type="text" class="form-control" id="category-film" value="@ViewBag.Event.participant" name="participant" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <p for="category-film"
+                           class="col-form-label">Guest:</p>
+                        <select class="form-select" style="width: 100%; height: 50px; border-color: #CCCCCC" aria-label="Default select example" id="theloai" tabindex="8" name="idGuest" required>
+                            <option selected value="@ViewBag.Event.Guest.idGuest">@ViewBag.Event.Guest.name</option>
+                            @foreach (var item4 in ViewBag.Guest)
+                            {
+                                <option value="@item4.idGuest">@item4.name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <p for="category-film"
+                           class="col-form-label">Organiser:</p>
+                        <select class="form-select" style="width: 100%; height: 50px; border-color: #CCCCCC " aria-label="Default select example" id="theloai" tabindex="8" name="idOrganiser" required>
+                            <option selected value="@ViewBag.Event.Organiser.idOrganiser">@ViewBag.Event.Organiser.name</option>
+                            @foreach (var item5 in ViewBag.Organsier)
+                            {
+                                <option value="@item5.idOrganiser">@item5.name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Cooperative:</label>
+                        <select class="form-select" style="width: 100%; height: 50px; border-color: #CCCCCC" aria-label="Default select example" id="theloai" tabindex="8" name="idCooperative" required>
+                            <option selected value="@ViewBag.Event.Cooperative.idCooperative">@ViewBag.Event.Cooperative.name</option>
+                            @foreach (var item6 in ViewBag.Cooperative)
+                            {
+                                <option value="@item6.idCooperative">@item6.name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Image:</label>
+                        <input type="file" name="file" value="@ViewBag.Event.image" class="form-control-file"
+                               id="exampleFormControlFile1">
+                        <img style="width: 200px !important;margin-top : 5px;height: 150px !important;" src="~/Content/images/@ViewBag.Event.image"
+                             class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Content:</label>
+                        <textarea name="content" value="@ViewBag.Event.content" id="editor" cols="30"
+                                  rows="30">@ViewBag.Event.content</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="submit" class="btn btn-success">Update </button>
+            </div>
+        </form>
+    </div>
+    <script>
+        CKEDITOR.replace("editor");
+    </script>
+</section>
+
+
